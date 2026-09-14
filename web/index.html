@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>How countries use their land</title>
+    <link rel="stylesheet" href="./css/tokens.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/export.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="top">
+        <div class="controls">
+          <button type="button" class="chip" id="theme-toggle" aria-pressed="false">
+            Dark
+          </button>
+          <div id="shape-controls" role="group" aria-label="Glyph shape">
+            <button type="button" class="chip is-active" data-shape="petal" aria-pressed="true">
+              Petals
+            </button>
+            <button type="button" class="chip" data-shape="square" aria-pressed="false">
+              Squares
+            </button>
+          </div>
+          <div id="preset-controls" role="group" aria-label="Country count"></div>
+        </div>
+        <div class="title-block">
+          <h1 id="chart-title">How countries use their land</h1>
+          <p id="chart-subtitle" class="subtitle">
+            % of soil that each country allocates to
+            <button type="button" class="cat-filter" data-cat="ARABLE" aria-pressed="false">Arable and cropland</button>,
+            <button type="button" class="cat-filter" data-cat="FOREST" aria-pressed="false">Forest</button>,
+            <button type="button" class="cat-filter" data-cat="MEAD" aria-pressed="false">Meadows and pastures</button>
+            or
+            <button type="button" class="cat-filter" data-cat="OTHER" aria-pressed="false">Other</button>.
+          </p>
+        </div>
+      </header>
+
+      <p id="error" hidden></p>
+
+      <div class="chart-scroll">
+        <div
+          id="chart"
+          class="petal-grid"
+          role="img"
+          aria-label="Petal small-multiple chart of land use by country"
+        ></div>
+      </div>
+      <p id="readout" aria-live="polite"></p>
+
+      <footer class="caption">
+        <div class="sources" id="sources">
+          Sources:
+          <a
+            href="https://data-explorer.oecd.org/vis?lc=en&df[ds]=DisseminateFinalDMZ&df[id]=DSD_LAND_USE@DF_LAND_USE&df[ag]=OECD.ENV.EPI"
+            rel="noopener"
+            >OECD, Environment Database - Land use (2021)</a
+          >.
+        </div>
+        <div id="author-line">
+          Author: Witold @
+          <a href="https://witold1.github.io">Witold1.github.io</a>
+        </div>
+      </footer>
+    </div>
+    <div id="tooltip" hidden></div>
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>

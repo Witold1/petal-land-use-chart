@@ -1,0 +1,22 @@
+{
+  "datasets": [
+    {
+      "id": "top30",
+      "label": "Top 30",
+      "title": "How countries use their land",
+      "url": "../data/land_use_top50.json",
+      "limit": 30,
+      "sources": "Sources: <a href=\"https://data-explorer.oecd.org/vis?lc=en&df[ds]=DisseminateFinalDMZ&df[id]=DSD_LAND_USE@DF_LAND_USE&df[ag]=OECD.ENV.EPI\" rel=\"noopener\">OECD, Environment Database - Land use (2021)</a>.",
+      "author": "Author: Witold @ <a href=\"https://witold1.github.io\">Witold1.github.io</a>"
+    },
+    {
+      "id": "top50",
+      "label": "Top 50",
+      "title": "How countries use their land",
+      "url": "../data/land_use_top50.json",
+      "limit": 50,
+      "sources": "Sources: <a href=\"https://data-explorer.oecd.org/vis?lc=en&df[ds]=DisseminateFinalDMZ&df[id]=DSD_LAND_USE@DF_LAND_USE&df[ag]=OECD.ENV.EPI\" rel=\"noopener\">OECD, Environment Database - Land use (2021)</a>.",
+      "author": "Author: Witold @ <a href=\"https://witold1.github.io\">Witold1.github.io</a>"
+    }
+  ]
+}

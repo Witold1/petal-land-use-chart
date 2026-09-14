@@ -1,0 +1,193 @@
+.export-tools {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.35em;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+}
+
+.export-tools .export-icon {
+  display: inline-flex;
+  flex-shrink: 0;
+  color: inherit;
+  opacity: 0.7;
+}
+
+.export-tools .export-icon svg {
+  display: block;
+  width: 0.85em;
+  height: 0.85em;
+}
+
+.export-tools button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid transparent;
+  border-radius: 0;
+  background: none;
+  font: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.export-tools:hover .export-icon,
+.export-tools button:hover,
+.export-tools button:focus-visible {
+  opacity: 1;
+  outline: none;
+}
+
+.export-tools button:hover,
+.export-tools button:focus-visible {
+  border-bottom-color: currentColor;
+}
+
+.export-tools button:disabled {
+  opacity: 0.45;
+  cursor: wait;
+  border-bottom-color: transparent;
+}
+
+.export-tools .export-prefix {
+  font: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+  margin-right: 0.15em;
+}
+
+.export-sep {
+  color: inherit;
+  opacity: 0.45;
+  user-select: none;
+  font-weight: inherit;
+}
+
+.footer-export {
+  margin: 0.65rem 0 0;
+}
+
+.footer-source {
+  margin: 0.35rem 0 0;
+}
+
+.footer-source a {
+  color: inherit;
+}
+
+body.is-exporting .controls,
+body.is-exporting .export-tools,
+body.is-exporting .footer-export,
+body.is-exporting .footer-source,
+body.is-exporting #readout,
+body.is-exporting #error,
+body.is-exporting #tooltip,
+.page.is-export-capture .controls,
+.page.is-export-capture .export-tools,
+.page.is-export-capture .footer-export,
+.page.is-export-capture .footer-source,
+.page.is-export-capture #readout,
+.page.is-export-capture #error,
+.page.is-export-capture #tooltip {
+  display: none !important;
+}
+
+html:has(body.is-exporting),
+body.is-exporting,
+.page.is-export-capture {
+  font-size: 18px !important;
+  -webkit-text-size-adjust: 100% !important;
+  text-size-adjust: 100% !important;
+  background: var(--face) !important;
+}
+
+body.is-exporting {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+body.is-exporting .page,
+.page.is-export-capture {
+  width: 1180px;
+  max-width: 1180px;
+  padding: 24px 24px 40px;
+  background: var(--face);
+}
+
+body.is-exporting .page {
+  overflow: visible;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+body.is-exporting .top,
+.page.is-export-capture .top {
+  margin-bottom: 12px;
+}
+
+body.is-exporting .title-block,
+.page.is-export-capture .title-block {
+  text-align: left;
+  max-width: none;
+}
+
+body.is-exporting h1,
+.page.is-export-capture h1 {
+  font-size: 39.2px !important;
+}
+
+body.is-exporting .subtitle,
+.page.is-export-capture .subtitle {
+  font-size: 20px !important;
+}
+
+body.is-exporting .caption,
+.page.is-export-capture .caption {
+  font-size: 18px !important;
+  margin-top: 28px;
+}
+
+body.is-exporting .chart-scroll,
+.page.is-export-capture .chart-scroll {
+  overflow: visible !important;
+}
+
+body.is-exporting #chart,
+.page.is-export-capture #chart {
+  display: grid !important;
+  grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+  gap: 0.55rem 0.65rem !important;
+  min-width: 0 !important;
+  width: 100% !important;
+}
+
+body.is-exporting .country-cell,
+.page.is-export-capture .country-cell {
+  background: transparent !important;
+}
+
+body.is-exporting .petal-grid.is-filtered .petal,
+.page.is-export-capture .petal-grid.is-filtered .petal {
+  opacity: var(--petal-alpha) !important;
+}
+
+.page.is-export-capture {
+  margin: 0 !important;
+  width: 1180px;
+  max-width: 1180px;
+  overflow: visible;
+  transform: none !important;
+  position: relative;
+  left: 0;
+  top: 0;
+}

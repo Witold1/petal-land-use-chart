@@ -1,0 +1,42 @@
+:root,
+:root[data-theme="light"] {
+  --face: #f9ede2;
+  --tick: #1a1a1a;
+  --grid: #000000;
+  --title: #111111;
+  --caption: #6b6b6b;
+  --muted: #666666;
+  --chip: #f0e2d4;
+  --chip-on: #e5d3c0;
+  --stroke: #d2c0ae;
+  --error: #b33;
+  --tip-bg: #fff8f1;
+  --tip-border: #d2c0ae;
+  --petal-arable: #e03131;
+  --petal-forest: #1c7ed6;
+  --petal-mead: #f76707;
+  --petal-other: #2f9e44;
+  --petal-alpha: 0.5;
+  --cell-hover: rgba(0, 0, 0, 0.04);
+}
+
+:root[data-theme="dark"] {
+  --face: #2f2f2f;
+  --tick: #f2f2f2;
+  --grid: #ffffff;
+  --title: #ffffff;
+  --caption: #d0d0d0;
+  --muted: #c8c8c8;
+  --chip: #454545;
+  --chip-on: #3a3a3a;
+  --stroke: #6a6a6a;
+  --error: #ffc9c9;
+  --tip-bg: #3a3a3a;
+  --tip-border: #6a6a6a;
+  --petal-arable: #ff6b6b;
+  --petal-forest: #74c0fc;
+  --petal-mead: #ffa94d;
+  --petal-other: #69db7c;
+  --petal-alpha: 0.55;
+  --cell-hover: rgba(255, 255, 255, 0.06);
+}
