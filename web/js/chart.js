@@ -13,7 +13,7 @@ const NS = "http://www.w3.org/2000/svg";
 const VIEW = 10;
 const CENTER = VIEW / 2;
 /** SVG user units — must stay an attribute so export scales with the viewBox. */
-const GRID_LABEL_SIZE = 0.45;
+const GRID_LABEL_SIZE = 0.60;
 
 export const SHAPES = ["petal", "square"];
 
